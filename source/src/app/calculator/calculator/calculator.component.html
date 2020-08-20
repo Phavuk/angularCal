@@ -1,0 +1,33 @@
+<section class="wrap">
+    <mat-card class="calculator">
+        
+        <input type="number" placeholder="First number" [(ngModel)]="numberOne"/>
+        <input type="number" placeholder="Second number" [(ngModel)]="numberTwo"/>
+        
+        <button mat-raised-button color="primary" (click) = add()>
+            Add
+        </button>
+
+        <button mat-raised-button color="primary" (click) = sub()>
+            Sub
+        </button>
+
+        <button mat-raised-button color="primary" (click) = multiply()>
+            Multiply
+        </button>
+
+        <button mat-raised-button color="primary" (click) = divide()>
+            Divide
+        </button>
+
+        <p>Result: </p>
+        <section class="result">
+            {{ result }}
+        </section>
+
+        <button mat-raised-button color="primary" (click) = reset()>
+            Reset
+        </button>
+
+    </mat-card>
+</section>
